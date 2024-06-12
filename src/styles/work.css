@@ -1,0 +1,64 @@
+.work-title {
+  @apply w-full text-stone-50 text-lg sm:text-3xl font-['satoshi-black'] uppercase;
+}
+.work-title-sub {
+  @apply opacity-40 text-stone-50 text-base sm:text-2xl font-['satoshi-medium'];
+}
+.work-title-frame-inner {
+  @apply flex-col justify-start items-center gap-3 sm:gap-5 inline-flex;
+}
+.work-title-frame-outer {
+  @apply self-stretch px-5 pt-12 pb-2.5 justify-center items-start inline-flex;
+}
+
+.work-session-frame {
+  @apply w-full h-auto flex-col my-8 justify-start items-center gap-8 sm:gap-16 inline-flex px-8 sm:px-24 lg:px-[24rem];
+}
+.work-session-frame-blue {
+  @apply w-full h-auto py-32 my-24 flex-col bg-indigo-500 justify-start items-center gap-8 sm:gap-16 inline-flex px-8 sm:px-24 lg:px-[24rem];
+}
+.work-session-frame-gray {
+  @apply w-full h-auto py-32 my-24 flex-col bg-zinc-800 justify-start items-center gap-8 sm:gap-16 inline-flex px-8 sm:px-24 lg:px-[24rem];
+}
+.work-pic {
+  @apply self-center w-full h-fit sm:min-w-[600px] lg:min-w-[800px];
+}
+.work-pic-frame-split {
+  @apply grow shrink h-[1px] mt-6 mb-2 justify-start items-center inline-flex;
+}
+.work-pic-frame-inner {
+  @apply grow shrink basis-0 flex-col justify-center items-center inline-flex;
+}
+.work-pic-frame-outer {
+  @apply self-center py-5 justify-center items-center inline-flex;
+}
+.work-session-head {
+  @apply text-stone-50 text-base sm:text-xl font-medium font-['Inter'];
+}
+.work-session-head-big {
+  @apply text-stone-50 text-2xl sm:leading-relaxed sm:text-3xl font-['satoshi-bold'];
+}
+.work-session-body {
+  @apply grow shrink text-stone-50/60 text-lg sm:text-2xl font-['satoshi-medium'];
+}
+.work-session-body-small {
+  @apply grow shrink text-stone-50/60 text-sm sm:text-base font-normal font-['Inter'];
+}
+.work-frame-col {
+  @apply justify-center items-start gap-6 sm:gap-12 flex-col sm:flex-row inline-flex;
+}
+.work-frame-col-left {
+  @apply w-full justify-start items-start gap-6 sm:gap-12 flex-col sm:flex-row inline-flex;
+}
+.work-frame-3col-each {
+  @apply grow shrink basis-0 flex-col justify-start items-start gap-1 sm:gap-4 inline-flex;
+}
+.work-frame-2col-each {
+  @apply grow shrink basis-0 w-auto h-fit max-w-[300px] sm:min-w-[200px] lg:min-w-[400px];
+}
+.work-frame-1row {
+  @apply my-4 grow shrink self-stretch h-auto flex-col justify-start items-start gap-4 flex;
+}
+.work-frame-info {
+  @apply w-full h-auto pb-2.5 flex-col justify-center items-center gap-16 inline-flex sm:min-w-[600px] lg:min-w-[800px];
+}
