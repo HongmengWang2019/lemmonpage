@@ -60,7 +60,6 @@ const Header = () => {
                 <DisclosureButton
                   key={item.name}
                   as="a"
-                  href={item.href}
                   className={classNames(
                     item.current
                       ? "bg-gray-900 text-white"
@@ -69,7 +68,7 @@ const Header = () => {
                   )}
                   aria-current={item.current ? "page" : undefined}
                 >
-                  {item.name}
+                  <Link to={item.href}>{item.name}</Link>
                 </DisclosureButton>
               ))}
             </div>
