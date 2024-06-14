@@ -1,3 +1,55 @@
+.home-title-upper {
+  @apply text-2xl text-stone-50 sm:text-[28px] font-bold font-['satoshi-black'] uppercase;
+}
+.home-title-sub {
+  @apply text-xl opacity-40 text-stone-50 sm:text-2xl font-medium font-['satoshi-medium'];
+}
+.home-title-frame-left {
+  @apply w-full h-auto  flex-col justify-start items-start gap-3 flex lg:inline-flex lg:w-[300px] lg:items-end lg:gap-5;
+}
+.home-body {
+  @apply text-xl leading-7 self-stretch text-stone-50 sm:text-2xl font-['satoshi-medium'] sm:leading-9 sm:antialiased;
+}
+.home-body-about {
+  @apply text-lg leading-6 self-stretch text-stone-50 sm:text-xl font-['satoshi-regular'] sm:leading-8 sm:antialiased;
+}
+.home-body-about-experience1 {
+  @apply grow shrink text-base leading-6 text-stone-50 sm:text-xl font-['satoshi-bold'] xl:w-24;
+}
+.home-body-about-experience2 {
+  @apply grow shrink text-base leading-6 self-stretch text-stone-50/50 sm:text-xl font-['satoshi-regular'] xl:w-32;
+}
+.home-body-about-experience3 {
+  @apply grow  text-base leading-6 self-stretch text-stone-50 sm:text-xl font-['satoshi-medium'] xl:w-72;
+}
+.home-body-title {
+  @apply text-2xl mb-4 leading-10 self-stretch text-stone-50 sm:mb-12 sm:text-6xl font-['satoshi-bold'] sm:leading-9 sm:antialiased;
+}
+.home-intro-frame {
+  @apply w-full px-14 py-2 flex-col justify-start items-start inline-flex gap-[80px] mb-24 lg:justify-center lg:gap-32 lg:flex-row;
+}
+.home-about-body-frame {
+  @apply w-full px-14 py-2 flex-col justify-start items-start inline-flex mb-24 lg:justify-center lg:gap-32 lg:flex-row;
+}
+.home-body-frame {
+  @apply w-full h-auto flex-col justify-start items-start gap-5 inline-flex lg:w-[800px];
+}
+.home-work-title {
+  @apply items-end text-stone-50 text-4xl sm:text-5xl font-['satoshi-bold'];
+}
+.home-work-title-sub {
+  @apply text-lg leading-3 opacity-40 text-stone-50 lg:text-xl font-['satoshi-regular'];
+}
+.home-work-title-frame-left {
+  @apply w-[300px] flex-col justify-start items-center lg:items-end gap-2 lg:gap-4 inline-flex;
+}
+.home-work-frame {
+  @apply w-full h-fit px-14 pt-20 pb-2.5 flex-col justify-start items-center gap-14 inline-flex lg:flex-row lg:justify-center lg:items-start lg:gap-32;
+}
+.home-frame {
+  @apply w-full h-auto my-14 lg:my-24 flex-col justify-start items-center inline-flex overflow-hidden gap-8;
+}
+
 .work-title {
   @apply w-full text-stone-50 text-lg sm:text-3xl font-['satoshi-black'] uppercase;
 }
@@ -12,13 +64,13 @@
 }
 
 .work-session-frame {
-  @apply w-full h-auto flex-col my-8 justify-start items-center gap-8 sm:gap-16 inline-flex px-8 sm:px-24 lg:px-[24rem];
+  @apply w-full h-auto flex-col my-8 justify-start items-center gap-8 sm:gap-20 inline-flex px-8 sm:px-24 lg:px-[24rem];
 }
 .work-session-frame-blue {
-  @apply w-full h-auto py-32 my-24 flex-col bg-indigo-500 justify-start items-center gap-8 sm:gap-16 inline-flex px-8 sm:px-24 lg:px-[24rem];
+  @apply w-full h-auto py-24 my-24 flex-col bg-indigo-500 justify-start items-center gap-8 sm:gap-16 inline-flex px-8 sm:px-24 lg:px-[24rem];
 }
 .work-session-frame-gray {
-  @apply w-full h-auto py-32 my-24 flex-col bg-zinc-800 justify-start items-center gap-8 sm:gap-16 inline-flex px-8 sm:px-24 lg:px-[24rem];
+  @apply w-full h-auto py-24 my-24 flex-col bg-zinc-800 justify-start items-center gap-8 sm:gap-16 inline-flex px-8 sm:px-24 lg:px-[24rem];
 }
 .work-pic {
   @apply self-center w-full h-fit sm:min-w-[600px] lg:min-w-[800px];
@@ -33,31 +85,46 @@
   @apply self-center py-5 justify-center items-center inline-flex;
 }
 .work-session-head {
-  @apply text-stone-50 text-base sm:text-xl font-medium font-['Inter'];
+  @apply text-stone-50 text-lg sm:leading-9 sm:text-2xl font-['satoshi-medium'];
 }
 .work-session-head-big {
   @apply text-stone-50 text-2xl sm:leading-relaxed sm:text-3xl font-['satoshi-bold'];
+}
+.work-session-body-big {
+  @apply grow shrink text-stone-50/80 text-lg sm:leading-9 sm:text-2xl font-['satoshi-medium'];
 }
 .work-session-body {
   @apply grow shrink text-stone-50/60 text-lg sm:text-2xl font-['satoshi-medium'];
 }
 .work-session-body-small {
-  @apply grow shrink text-stone-50/60 text-sm sm:text-base font-normal font-['Inter'];
+  @apply grow shrink text-stone-50/60 text-sm sm:text-base font-['satoshi-regular'];
 }
 .work-frame-col {
   @apply justify-center items-start gap-6 sm:gap-12 flex-col sm:flex-row inline-flex;
 }
 .work-frame-col-left {
-  @apply w-full justify-start items-start gap-6 sm:gap-12 flex-col sm:flex-row inline-flex;
+  @apply w-full justify-start my-6 items-start gap-6 sm:gap-24 flex-col sm:flex-row inline-flex;
 }
 .work-frame-3col-each {
   @apply grow shrink basis-0 flex-col justify-start items-start gap-1 sm:gap-4 inline-flex;
 }
+.work-frame-3col-each-pic {
+  @apply grow shrink basis-0 max-w-[220px] h-fit flex-col justify-start items-start  inline-flex;
+}
 .work-frame-2col-each {
   @apply grow shrink basis-0 w-auto h-fit max-w-[300px] sm:min-w-[200px] lg:min-w-[400px];
 }
+.work-frame-2col-pic-h {
+  @apply grow shrink basis-0 w-fit h-fit max-h-[540px] max-w-[300px] sm:min-w-[100px] lg:min-w-[200px];
+}
+.work-frame-2col-text-w {
+  @apply my-4 grow shrink self-stretch h-auto flex-col justify-start items-start gap-4 flex max-w-[420px];
+}
 .work-frame-1row {
   @apply my-4 grow shrink self-stretch h-auto flex-col justify-start items-start gap-4 flex;
+}
+.work-frame-1row-left70 {
+  @apply my-4 grow shrink max-w-70p self-stretch h-auto flex-col justify-start items-start gap-4 flex;
 }
 .work-frame-info {
   @apply w-full h-auto pb-2.5 flex-col justify-center items-center gap-16 inline-flex sm:min-w-[600px] lg:min-w-[800px];

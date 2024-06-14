@@ -1,28 +1,26 @@
 import React from "react";
 import TopSession from "./TopSession";
 import Overview from "./Overview";
+import Highlights from "./Highlights";
 import Research from "./Research";
-import Insights from "./Insights";
 import Approach from "./Approach";
+import Clarification from "./Clarification";
 import Solution from "./Solution";
-import UAT from "./UAT";
-import Improvements from "./Improvements";
 
 const sidebar = [
   { name: "Overview", href: "#overview", current: false },
+  { name: "Highlights", href: "#highlights", current: false },
   { name: "Research summary", href: "#researchsummary", current: false },
-  { name: "Insights", href: "#insights", current: false },
   { name: "Approach", href: "#approach", current: false },
+  { name: "Clarification", href: "#clarification", current: false },
   { name: "Solution", href: "#solution", current: false },
-  { name: "UAT", href: "#UAT", current: false },
-  { name: "Improvements", href: "#improvements", current: false },
 ];
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
-function Tusimple() {
+function Momenta() {
   return (
     <div>
       <aside className="hidden lg:block lg:self-start lg:fixed lg:top-40 lg:right-8 xl:right-16 lg:col-span-1">
@@ -52,16 +50,19 @@ function Tusimple() {
         <div className="w-full h-full bg-black flex-col justify-start items-center gap-4 sm:gap-8 inline-flex">
           <TopSession />
           <Overview id="overview" />
+          <Highlights id="highlights" />
           <Research id="researchsummary" />
-          <Insights id="insights" />
           <Approach id="approach" />
+          <Clarification id="clarification" />
+          <Solution id="solution" />
+          {/* 
           <Solution id="solution" />
           <UAT id="UAT" />
-          <Improvements id="improvements" />
+          <Improvements id="improvements" /> */}
         </div>
       </main>
     </div>
   );
 }
 
-export default Tusimple;
+export default Momenta;

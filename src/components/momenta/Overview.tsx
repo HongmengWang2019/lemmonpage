@@ -1,10 +1,7 @@
 import React from "react";
 import "../../styles/work.css";
-import problemTS from "../../assets/tusimple/problemTS.png";
-import solutionTS from "../../assets/tusimple/solutionTS.png";
-import solutionSub1 from "../../assets/tusimple/Cut_for_data_panel.gif";
-import solutionSub2 from "../../assets/tusimple/Cut_for_setting.gif";
 import sessionSplit from "../../assets/sessionSplit.png";
+import solutioncover from "../../assets/momenta/solutioncover.png";
 
 interface OverviewProps {
   id: string;
@@ -20,9 +17,9 @@ const Overview: React.FC<OverviewProps> = (props) => {
           <div className="work-frame-1row">
             <div className="work-session-head">Overview</div>
             <div className="work-session-body">
-              Advanced CameraViewer is a web-based all-in-one tool for
-              streamlined data visualization, efficient data search and
-              customization.
+              Smart Valet Parking(SVP) is an in-vehicle solution designed to
+              autonomously handle the parking process and prepare for departure.
+              It can be activated within the vehicle(HMI) or remotely(mobile).
             </div>
           </div>
           <div className="work-frame-col">
@@ -30,14 +27,15 @@ const Overview: React.FC<OverviewProps> = (props) => {
               <div className="work-session-head">My Role</div>
               <div className="work-session-body">Product designer</div>
               <div className="work-session-body-small">
-                I led the team through a holistic end-to-end design process,
-                from generative research to analysis to ideation, iteration, and
-                UAT after implementation.
+                I contributed to the end-to-end design process, starting from
+                hypothesis generation, conducting contextual inquiries,
+                ideation, creating prototypes, and ultimately delivering the
+                final product.
               </div>
             </div>
             <div className="work-frame-3col-each">
               <div className="work-session-head">Timeline</div>
-              <div className="work-session-body">3 month</div>
+              <div className="work-session-body">4 month</div>
               <div className="work-session-body-small">
                 (with other projects)
               </div>
@@ -47,7 +45,8 @@ const Overview: React.FC<OverviewProps> = (props) => {
               <div className="work-session-body">Me (Product designer)</div>
               <div className="work-session-body-small">
                 1 product manager
-                <br />1 software engineer
+                <br />2 software engineers
+                <br />1 senior product designer
               </div>
             </div>
           </div>
@@ -58,12 +57,16 @@ const Overview: React.FC<OverviewProps> = (props) => {
           <div className="work-frame-1row">
             <div className="work-session-head">Problem</div>
             <div className="work-session-body">
-              Engineers(users) were frustrated by the limits of the previous
-              tool "CameraViewer", that…
+              Drivers expressed frustration with the time it took to park and
+              the distance from the parking spot to their destination.
             </div>
-          </div>
-          <div className="work-pic-frame-inner">
-            <img className="work-pic" src={problemTS} />
+            <div className="work-session-body-small">
+              "The parking lot is too big."
+              <br />
+              "Cannot recall the parking spot."
+              <br />
+              "Inconvenient for heavy belongings."
+            </div>
           </div>
         </div>
       </div>
@@ -71,8 +74,8 @@ const Overview: React.FC<OverviewProps> = (props) => {
         <div className="work-frame-info">
           <div className="work-frame-1row">
             <div className="work-session-head-big">
-              Imagine a component that offers visualizations from various data
-              sources and enables customizable data presentation.
+              Imagine if you are able to have your car park itself and summon it
+              whenever you need it.
             </div>
           </div>
         </div>
@@ -83,17 +86,13 @@ const Overview: React.FC<OverviewProps> = (props) => {
           <div className="work-frame-1row">
             <div className="work-session-head">Solution</div>
             <div className="work-session-body">
-              Advanced CameraViewer combines multiple windows for streamlined
-              data visualization, enabling efficient data search and
-              customization for improving work efficiency.
+              Smart Valet Parking(SVP) is designed to autonomously park the car
+              in a parking lot and send the car to the driver at a designated
+              location upon summoning.
             </div>
           </div>
           <div className="work-pic-frame-inner">
-            <img className="work-pic" src={solutionTS} />
-          </div>
-          <div className="work-frame-col">
-            <img className="work-frame-2col-each" src={solutionSub1} />
-            <img className="work-frame-2col-each" src={solutionSub2} />
+            <img className="work-pic" src={solutioncover} />
           </div>
         </div>
       </div>

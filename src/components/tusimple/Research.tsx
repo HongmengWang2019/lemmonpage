@@ -4,12 +4,17 @@ import opportunity from "../../assets/tusimple/opportunityTS.png";
 import researchM1 from "../../assets/tusimple/researchSessionTS.png";
 import researchM2 from "../../assets/tusimple/researchMethodTS.png";
 import researchResult from "../../assets/tusimple/researchSummaryTS.png";
-import sessionSplit from "../../assets/tusimple/sessionSplit.png";
+import sessionSplit from "../../assets/sessionSplit.png";
 
-const Research = () => {
+interface ResearchProps {
+  id: string;
+}
+
+const Research: React.FC<ResearchProps> = (props) => {
+  const { id } = props;
   return (
     <>
-      <div className="work-session-frame-gray">
+      <div id={id} className="work-session-frame-gray">
         <div className="work-frame-info">
           <div className="work-frame-1row">
             <div className="work-session-head-big">How do we get there?</div>

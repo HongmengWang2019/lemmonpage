@@ -1,5 +1,5 @@
 import React from "react";
-import titlePic from "../../assets/tusimple/titlePicTS.png";
+import titlePic from "../../assets/momenta/titlePic.png";
 import "../../styles/work.css";
 
 const TopSession = () => {
@@ -7,10 +7,8 @@ const TopSession = () => {
     <div className="work-session-frame">
       <div className="work-title-frame-outer">
         <div className="work-title-frame-inner">
-          <div className="work-title">
-            [Dev viz tool] Advanced Camera Viewer
-          </div>
-          <div className="work-title-sub">Tusimple</div>
+          <div className="work-title">[Mobile - HMI] SMART VALET PARKING</div>
+          <div className="work-title-sub">Momenta</div>
         </div>
       </div>
       <div className="work-pic-frame-outer">

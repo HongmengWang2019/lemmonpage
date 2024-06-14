@@ -1,7 +1,7 @@
 {
   "name": "lemmon-wang-webpage",
   "version": "0.1.0",
-  "homepage": "https://page.lemmon.wang",
+  "homepage": "https://lemmon.wang",
   "private": true,
   "dependencies": {
     "@headlessui/react": "^2.0.4",
@@ -15,11 +15,13 @@
     "@types/node": "^16.18.98",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
+    "@types/react-router-dom": "^5.3.3",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "lucide-react": "^0.390.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-router-dom": "^6.23.1",
     "react-scripts": "5.0.1",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7",
@@ -28,7 +30,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build --cname page.lemmon.wang",
+    "deploy": "gh-pages -d build --cname lemmon.wang",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

@@ -9,6 +9,7 @@ import {
   DisclosurePanel,
 } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Link } from "react-router-dom";
 
 const navigation = [
   { name: "Work", href: "#", current: true },
@@ -38,12 +39,18 @@ const Header = () => {
               </DisclosureButton>
             </div>
             <div className="hidden sm:justify-start sm:items-center sm:gap-2 sm:flex sm:overflow-hidden">
-              <button className="w-20 text-stone-50 text-left text-xl font-regular tracking-tight hover:font-semibold">
+              <Link
+                to="/"
+                className="w-20 text-stone-50 text-left text-xl font-regular tracking-tight hover:font-semibold"
+              >
                 Work
-              </button>
-              <button className="w-20 text-stone-50 text-left text-xl font-regular tracking-tight hover:font-semibold">
+              </Link>
+              <Link
+                to="/about"
+                className="w-20 text-stone-50 text-left text-xl font-regular tracking-tight hover:font-semibold"
+              >
                 About
-              </button>
+              </Link>
             </div>
             <img className="w-16 h-16" src={logo} />
           </div>

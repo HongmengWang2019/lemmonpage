@@ -11,7 +11,7 @@ const Footer = () => {
           <img className="w-9 h-9" src={logo} />
         </div>
         <div className="text-stone-50/80 text-base font-medium font-roboto-flex">
-          &copy; Lemmon W. All rights reserved.
+          &copy; 2024 Lemmon W. All rights reserved.
         </div>
       </div>
 

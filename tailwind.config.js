@@ -93,6 +93,21 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      maxWidth: {
+        '70p': '70%', 
+      },
+      spacing: {
+        '20p': '20%',
+        '40p': '40%',
+        '45p': '45%',
+        '60p': '60%', // Adding a custom spacing key '20p' for 20%
+      },
+      inset: {
+        '20p': '20%',
+        '40p': '40%',
+        '45p': '45%', 
+        '60p': '60%', // Extending inset to include '20p' for top, right, bottom, left
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],

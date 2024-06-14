@@ -1,16 +1,21 @@
 import React from "react";
 import "../../styles/work.css";
-import sessionSplit from "../../assets/tusimple/sessionSplit.png";
-import trailor from "../../assets/tusimple/tailorTS.png";
+import sessionSplit from "../../assets/sessionSplit.png";
+import tailor from "../../assets/tusimple/tailorTS.png";
 import featureList from "../../assets/tusimple/featureList.png";
 import ideation from "../../assets/tusimple/ideation.png";
 import structure from "../../assets/tusimple/Structure.png";
 import sitemap from "../../assets/tusimple/sitemap.png";
 
-const Approach = () => {
+interface ApproachProps {
+  id: string;
+}
+
+const Approach: React.FC<ApproachProps> = (props) => {
+  const { id } = props;
   return (
     <>
-      <div className="work-session-frame-blue">
+      <div id={id} className="work-session-frame-blue">
         <div className="work-frame-info">
           <div className="work-frame-1row">
             <div className="work-session-head-big">
@@ -31,7 +36,7 @@ const Approach = () => {
             </div>
           </div>
           <div className="work-pic-frame-inner">
-            <img className="work-pic" src={trailor} />
+            <img className="work-pic" src={tailor} />
           </div>
           <div className="work-pic-frame-split">
             <img className="work-pic" src={sessionSplit} />
