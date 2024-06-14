@@ -5,7 +5,9 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "./styles/satoshi.css";
 import { BrowserRouter } from "react-router-dom";
+import ReactGA from "react-ga4";
 
+ReactGA.initialize("G-M03E4N18QN");
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
