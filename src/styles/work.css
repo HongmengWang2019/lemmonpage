@@ -32,7 +32,7 @@
   @apply w-full px-14 py-2 flex-col justify-start items-start inline-flex mb-24 lg:justify-center lg:gap-32 lg:flex-row;
 }
 .home-body-frame {
-  @apply w-full h-auto flex-col justify-start items-start gap-5 inline-flex lg:w-[800px];
+  @apply w-full h-auto flex-col justify-start items-start gap-5 inline-flex lg:max-w-[800px];
 }
 .home-work-title {
   @apply items-end text-stone-50 text-4xl sm:text-5xl font-['satoshi-bold'];

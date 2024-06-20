@@ -17,8 +17,8 @@ function classNames(...classes: string[]) {
 const About = () => {
   return (
     <div>
-      <aside className="hidden lg:shrink lg:w-[300px] lg:block lg:self-start lg:fixed lg:top-60p lg:left-26">
-        <ul role="list" className="-mx-2 space-y-1">
+      <aside className="hidden lg:w-full lg:px-14 lg:py-2 lg:inline-flex lg:fixed lg:top-60p lg:flex-row  lg:gap-32 lg:items-start">
+        <ul role="list" className="space-y-1 w-[300px]">
           <li className="p-1 pl-3 text-sm font-semibold leading-6 text-stone-50/50 text-end">
             CONTENT
           </li>
@@ -29,8 +29,28 @@ const About = () => {
                 className={classNames(
                   item.current
                     ? "text-stone-50/70"
-                    : "text-gray-700 hover:text-stone-50/70",
+                    : "text-stone-50/30 hover:text-stone-50/70",
                   "group flex gap-x-3 rounded-md p-1 pl-3 text-sm font-semibold leading-6 justify-end"
+                )}
+              >
+                {item.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+        <ul role="list" className="space-y-1 w-[800px]">
+          <li className="hidden p-1 pl-3 text-sm font-semibold leading-6 text-stone-50/50 text-end">
+            CONTENT
+          </li>
+          {sidebar.map((item) => (
+            <li key={item.name}>
+              <a
+                href={item.href}
+                className={classNames(
+                  item.current
+                    ? "text-stone-50/70"
+                    : "text-stone-50/30 hover:text-stone-50/70",
+                  "hidden group gap-x-3 rounded-md p-1 pl-3 text-sm font-semibold leading-6 justify-end"
                 )}
               >
                 {item.name}
@@ -69,8 +89,8 @@ const About = () => {
             <div className="home-body-frame">
               <div className="home-body-title">identity</div>
               <div className="home-body-about">
-                I see myself as a Design Enthusiast, Architectural Thinker,
-                Startup Adventurer, Lifelong Learner. <br />
+                I see myself as a design enthusiast, architectural thinker,
+                startup adventurer, lifelong learner. <br />
                 I'm currently on my way to becoming an indie maker. This site is
                 my first project.
               </div>
@@ -184,6 +204,7 @@ const About = () => {
                 <br />
                 In my art, whether it's through a lens, on a canvas, or in
                 animations, I find vibrant ways to express myself.
+                <br />
                 <br />
                 And at shelters, where I volunteer, I connect and give back,
                 adding more depth to my life. If you're into any of these realms
